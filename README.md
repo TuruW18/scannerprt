@@ -3,7 +3,7 @@ Un scanner multithreadé en C++ qui scanne les 65535 ports en moins de 20 second
 
 Ce scanner de ports en C++ pour Windows (WinSock2) est conçu pour la vitesse. Il peut analyser 65 535 ports en moins de 10 secondes grâce à une architecture multithreadée optimisée.
 
-Le programme utilise un système de threads simultanés (200 threads) pour tester plusieurs ports en même temps. Cela évite d'attendre la réponse d'un port avant de passer au suivant.
+Le programme utilise un système de threads simultanés (1000 threads) pour tester plusieurs ports en même temps. Cela évite d'attendre la réponse d'un port avant de passer au suivant.
 
 Pour garantir une vitesse maximale, les sockets sont configurés en mode non-bloquant avec FIONBIO. Cela permet de ne pas rester figé sur les ports qui ne répondent pas.
 
